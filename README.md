@@ -15,6 +15,14 @@ Bluetooth, entrée AUX, applis de musique… Thème clair / sombre et couleur d'
   notifications est nécessaire pour voir les sessions des autres applis.
 - **Reprise au démarrage** de la dernière source (option).
 
+## Captures d'écran
+
+| | |
+|---|---|
+| ![Sources et réglages](docs/screenshots/settings.png)<br>Sources et réglages |  |
+
+Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots).
+
 ## Sur une touche du volant
 
 Avec [LibreHU BtnRemap](https://github.com/LibreHU/LibreHU-BtnRemap-app) : touche MODE / SRC → « Ouvrir une appli »
