@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Changer de source</string>
+    <string name="sources">Sources</string>
+    <string name="sources_hint">Dans l\'ordre où la touche MODE / SRC les parcourt. Désactivée : sautée.</string>
+    <string name="add_source">Ajouter une source</string>
+    <string name="add_aux">Entrée AUX</string>
+    <string name="aux_hint">Entrée AUX / AV (LibreHU service)</string>
+    <string name="media_apps">Applis média seulement</string>
+    <string name="all_apps">Toutes les applis</string>
+    <string name="no_apps">Aucune autre appli trouvée</string>
+    <string name="switching">Changement de source</string>
+    <string name="confirm_delay">Activer après %1$d s sans touche</string>
+    <string name="open_app">Ouvrir l\'appli de la source</string>
+    <string name="open_app_hint">Sinon elle joue en arrière-plan quand c\'est possible (accès aux notifications).</string>
+    <string name="resume_boot">Reprendre la dernière source au démarrage</string>
+    <string name="access_missing">L\'accès aux notifications permet à EasySource de mettre en pause les autres sources et d\'en lancer une sans l\'ouvrir.</string>
+    <string name="access_open">Autoriser l\'accès</string>
+    <string name="wheel">Commandes au volant</string>
+    <string name="wheel_hint">Dans LibreHU Touches, régler la touche MODE / SRC sur « Ouvrir une appli » → EasySource (sélecteur de source). Chaque appui affiche la source suivante ; elle démarre après le délai ci-dessus, ou tout de suite avec OK / lecture. ▶▶ / ◀◀ parcourent aussi la liste. D\'autres applis peuvent ouvrir le sélecteur :</string>
+    <string name="switcher_title">Source</string>
+    <string name="switcher_hint">MODE / ▶▶ : suivante · ◀◀ : précédente · démarre dans %1$d s</string>
+</resources>

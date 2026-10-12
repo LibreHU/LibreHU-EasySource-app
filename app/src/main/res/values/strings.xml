@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Switch source</string>
+    <string name="sources">Sources</string>
+    <string name="sources_hint">In the order the MODE / SRC key goes through them. Off: skipped.</string>
+    <string name="add_source">Add a source</string>
+    <string name="add_aux">AUX input</string>
+    <string name="aux_hint">AUX / AV input (LibreHU service)</string>
+    <string name="media_apps">Media apps only</string>
+    <string name="all_apps">All apps</string>
+    <string name="no_apps">No other app found</string>
+    <string name="switching">Switching</string>
+    <string name="confirm_delay">Activate after %1$d s without a key</string>
+    <string name="open_app">Open the source\'s app</string>
+    <string name="open_app_hint">Otherwise it plays in the background when it can (notification access).</string>
+    <string name="resume_boot">Start the last source at boot</string>
+    <string name="access_missing">Notification access lets EasySource pause the other sources and start one without opening it.</string>
+    <string name="access_open">Grant access</string>
+    <string name="wheel">Steering wheel</string>
+    <string name="wheel_hint">In LibreHU Touches, set the MODE / SRC key to \"Open an app\" → EasySource (source picker). Each press shows the next source; it starts after the delay above, or at once with OK / play. ▶▶ / ◀◀ move in the list too. Other apps can start the picker:</string>
+    <string name="switcher_title">Source</string>
+    <string name="switcher_hint">MODE / ▶▶ : next · ◀◀ : previous · starts in %1$d s</string>
+</resources>
