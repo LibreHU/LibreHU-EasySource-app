@@ -1,6 +1,9 @@
 package org.librehu.easysource
 
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.view.KeyEvent
 import androidx.activity.ComponentActivity
@@ -78,6 +81,42 @@ class SwitcherActivity : ComponentActivity() {
         restartCountdown()
     }
 
+    /**
+     * Steering wheel keys turned into media keys by LibreHU-service go to the media sessions, not to this window:
+     * while the picker shows, the service sends them here instead (▶▶ / ◀◀ move, ▶‖ confirms).
+     */
+    private val wheel =
+        object : BroadcastReceiver() {
+            override fun onReceive(
+                context: Context,
+                intent: Intent,
+            ) {
+                when (intent.getStringExtra("key")) {
+                    "next" -> move(1)
+                    "previous" -> move(-1)
+                    "ok" -> confirm()
+                }
+            }
+        }
+
+    override fun onResume() {
+        super.onResume()
+        registerReceiver(wheel, IntentFilter(ACTION_KEY))
+        tellService(true)
+    }
+
+    override fun onPause() {
+        tellService(false)
+        runCatching { unregisterReceiver(wheel) }
+        super.onPause()
+    }
+
+    private fun tellService(visible: Boolean) {
+        runCatching {
+            startService(Intent(SERVICE_SWITCHER).setClassName(SERVICE, "$SERVICE.LibreHuService").putExtra("visible", visible))
+        }
+    }
+
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         move(step(intent))
@@ -142,5 +181,10 @@ class SwitcherActivity : ComponentActivity() {
         /** Next source (also what starting this activity without an action does). */
         const val ACTION_NEXT = "org.librehu.easysource.action.NEXT"
         const val ACTION_PREVIOUS = "org.librehu.easysource.action.PREVIOUS"
+
+        /** Wheel key from LibreHU-service while the picker shows (extra "key": next, previous, ok). */
+        const val ACTION_KEY = "org.librehu.easysource.action.KEY"
+        private const val SERVICE = "org.librehu.service"
+        private const val SERVICE_SWITCHER = "org.librehu.service.SOURCE_SWITCHER"
     }
 }

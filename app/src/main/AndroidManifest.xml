@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Last source again after a reboot (option). -->
+    <!-- Open Headunit's LibreHU fork: RAISE_PROJECTION through its automation receiver (signature permission). -->
+    <uses-permission android:name="org.librehu.headunit.permission.CONFIGURE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <queries>
@@ -20,6 +22,11 @@
         <package android:name="org.librehu.service" />
         <package android:name="org.librehu.fm" />
         <package android:name="com.android.bluetooth" />
+        <!-- Android Auto (Open Headunit) and CarPlay: opened in front -->
+        <package android:name="org.librehu.headunit" />
+        <package android:name="com.andrerinas.headunitrevived" />
+        <package android:name="org.librehu.carplay" />
+        <package android:name="com.shilapi.xcertplay" />
     </queries>
 
     <application

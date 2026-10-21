@@ -25,6 +25,18 @@ object SourceSwitcher {
     private const val SERVICE = "org.librehu.service"
     private const val ACTION_AUDIO_SOURCE = "org.librehu.service.AUDIO_SOURCE"
     private const val PLAY_DELAY_MS = 1500L
+    private const val RAISE_DELAY_MS = 400L
+    private const val RAISE = "com.andrerinas.openheadunit.ACTION_RAISE_PROJECTION"
+
+    /** Open Headunit (LibreHU fork, upstream) and its automation receiver (the fork's needs the LibreHU key). */
+    private val HEADUNIT_RECEIVERS =
+        mapOf(
+            "org.librehu.headunit" to "com.andrerinas.openheadunit.automation.LibreHuAutomationReceiver",
+            "com.andrerinas.headunitrevived" to "com.andrerinas.openheadunit.automation.AutomationReceiver",
+        )
+
+    /** Android Auto and CarPlay apps. */
+    val PROJECTION = HEADUNIT_RECEIVERS.keys + setOf("org.librehu.carplay", "com.shilapi.xcertplay")
 
     private val main = Handler(Looper.getMainLooper())
 
@@ -39,6 +51,10 @@ object SourceSwitcher {
         for (c in sessions) if (c.packageName != source.packageName && c.isPlaying()) c.transportControls.pause()
         audioInput(context, aux = source.type == SourceType.AUX)
         if (source.type == SourceType.AUX) return
+        if (source.packageName in PROJECTION) {
+            projection(context, source.packageName)
+            return
+        }
         val controller = sessions.firstOrNull { it.packageName == source.packageName }
         val launch = context.packageManager.getLaunchIntentForPackage(source.packageName)
         if (launch != null && (store.settings.value.openApp || controller == null)) {
@@ -57,6 +73,33 @@ object SourceSwitcher {
                 if (c != null) c.transportControls.play() else mediaKey(context, KeyEvent.KEYCODE_MEDIA_PLAY)
             }, PLAY_DELAY_MS)
         }
+    }
+
+    /**
+     * Android Auto / CarPlay: shown in front whatever the "open the app" setting (a projection is a screen, its media
+     * session alone shows nothing), no play command (the phone plays). Open Headunit: its screen, then
+     * RAISE_PROJECTION through its automation receiver, which brings the projection back when a phone is connected
+     * (Open Headunit ignores it otherwise).
+     */
+    private fun projection(
+        context: Context,
+        pkg: String,
+    ) {
+        context.packageManager.getLaunchIntentForPackage(pkg)?.let { launch ->
+            try {
+                context.startActivity(launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            } catch (e: Exception) {
+                Log.w(TAG, "launch $pkg: ${e.message}")
+            }
+        }
+        val receiver = HEADUNIT_RECEIVERS[pkg] ?: return
+        main.postDelayed({
+            runCatching {
+                context.sendBroadcast(
+                    Intent(RAISE).setComponent(ComponentName(pkg, receiver)).addFlags(Intent.FLAG_RECEIVER_FOREGROUND),
+                )
+            }.onFailure { Log.w(TAG, "raise $pkg: ${it.message}") }
+        }, RAISE_DELAY_MS)
     }
 
     /** Next / previous enabled source after the current one. */
