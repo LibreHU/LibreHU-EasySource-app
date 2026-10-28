@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -64,8 +65,15 @@ fun SwitcherOverlay(
     ) {
         Column(
             Modifier
-                .clip(RoundedCornerShape(32.dp))
-                .background(CarColors.Background)
+                .clip(if (carStyled) androidx.compose.ui.graphics.RectangleShape else RoundedCornerShape(32.dp))
+                .background(if (RetroLook.ambient) Color(0xF00E1626) else CarColors.Background)
+                .then(
+                    when {
+                        RetroLook.factory -> Modifier.border(1.5.dp, Color.White)
+                        RetroLook.ambient -> Modifier.border(1.dp, CarColors.Accent)
+                        else -> Modifier
+                    },
+                )
                 // Taps on the panel itself do not close it (only outside).
                 .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) {}
                 .padding(vertical = 24.dp),
@@ -112,6 +120,7 @@ private fun Tile(
                 null
             }
         }
+    if (carStyled) return StyledTile(source, icon, selected, onClick)
     Column(
         Modifier
             .width(170.dp)
@@ -145,6 +154,55 @@ private fun Tile(
             fontWeight = FontWeight.Medium,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
+        )
+    }
+}
+
+/**
+ * A source in LibreHU Launcher's car styles: a nearly black tile with the accent line under it, the chosen one framed
+ * in the accent colour (factory); a framed tile lit from below when chosen (ambient).
+ */
+@Composable
+private fun StyledTile(
+    source: Source,
+    icon: androidx.compose.ui.graphics.ImageBitmap?,
+    selected: Boolean,
+    onClick: () -> Unit,
+) {
+    val accent = CarColors.Accent
+    Column(Modifier.width(170.dp).clickable(onClick = onClick), horizontalAlignment = Alignment.CenterHorizontally) {
+        Box(
+            Modifier
+                .fillMaxWidth()
+                .height(124.dp)
+                .background(
+                    if (RetroLook.factory) {
+                        androidx.compose.ui.graphics.Brush.verticalGradient(listOf(Color(0xFF1D1E22), Color(0xFF0B0B0D)))
+                    } else {
+                        androidx.compose.ui.graphics.Brush.verticalGradient(
+                            0f to Color.Black,
+                            0.6f to Color.Black,
+                            1f to if (selected) deep(accent) else Color.Black,
+                        )
+                    },
+                ).border(if (selected) 3.dp else 1.dp, if (RetroLook.factory && !selected) Color(0xFF2C2D31) else accent),
+            contentAlignment = Alignment.Center,
+        ) {
+            if (icon != null) {
+                Image(icon, null, Modifier.size(72.dp))
+            } else {
+                MetalIcon(if (source.type == SourceType.AUX) Icons.AutoMirrored.Filled.Input else Icons.Default.MusicNote, 60.dp)
+            }
+        }
+        if (RetroLook.factory) Box(Modifier.fillMaxWidth().height(3.dp).background(accent))
+        Text(
+            source.label,
+            color = if (RetroLook.factory && selected) accent else Color.White,
+            fontSize = 20.sp,
+            fontWeight = if (RetroLook.ambient) FontWeight.Light else FontWeight.SemiBold,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.padding(top = 8.dp),
         )
     }
 }

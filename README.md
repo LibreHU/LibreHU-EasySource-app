@@ -29,6 +29,8 @@ Bluetooth, entrée AUX, applis de musique… Thème clair / sombre et couleur d'
 | | |
 |---|---|
 | ![Réglages](docs/screenshots/settings.png)<br>Réglages | ![Réglages (2)](docs/screenshots/settings-2.png)<br>Réglages (2) |
+| ![Style Modularer Infotainment-Baukasten](docs/screenshots/style-mib.png)<br>Style Modularer Infotainment-Baukasten | ![Sélecteur, style Modularer Infotainment-Baukasten](docs/screenshots/style-mib-switcher.png)<br>Sélecteur, style Modularer Infotainment-Baukasten |
+| ![Style LHU-Link](docs/screenshots/style-lhu-link.png)<br>Style LHU-Link | ![Sélecteur, style LHU-Link](docs/screenshots/style-lhu-link-switcher.png)<br>Sélecteur, style LHU-Link |
 
 Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots). Galerie : [librehu.github.io/screenshots/easysource.html](https://librehu.github.io/screenshots/easysource.html).
 
@@ -61,6 +63,13 @@ une fonction plante avec « class / method not found », regarder `usage.txt` da
 que R8 a retiré) et ajouter une règle `-keep`.
 
 **Styles Modularer Infotainment-Baukasten et LHU-Link de LibreHU Launcher** : c'est le launcher qui les choisit et les demande à l'appli (il publie `style` = `factory` ou `ambient`, comme pour le style rétro) ; l'appli suit tout de suite : palette noire du style même en mode jour, coins carrés partout, police Source Sans 3 pour Modularer Infotainment-Baukasten (SIL OFL 1.1, `third_party/SourceSans3-LICENSE.md`), lettres fines pour LHU-Link. Rien à régler dans l'appli.
+
+Les écrans prennent aussi la **mise en page** de ces styles (éléments communs dans `ui/CarKit.kt`) : réglages dans le
+cadre du style (**Modularer Infotainment-Baukasten** : Retour encadré, titre sur un trait de la couleur d'accent,
+groupes titrés, interrupteurs en barres gris clair à case carrée, touches encadrées, touches du bas « Changer de
+source » et « Ajouter une source » ; **LHU-Link** : titre, groupes encadrés, interrupteurs ON | OFF à trait rouge,
+barre du bas Retour / Changer de source / Options) ; le **sélecteur de source** en tuiles d'usine (trait d'accent,
+choix encadré) ou en tuiles encadrées éclairées par le bas. Aucun logo, nom, icône, police ni image d'un constructeur.
 
 **Style rétro et police de LibreHU Launcher** : quand le launcher est en style rétro (les couleurs d'un afficheur
 d'autoradio tirées de sa couleur d'accent, couleur RGB comprise), cette appli prend sa palette (jour ou nuit) ; quand

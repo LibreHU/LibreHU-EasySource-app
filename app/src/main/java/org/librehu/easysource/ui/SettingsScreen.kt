@@ -2,6 +2,7 @@ package org.librehu.easysource.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -43,6 +44,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -60,6 +62,7 @@ import org.librehu.easysource.SourceSwitcher
 import org.librehu.easysource.data.Source
 import org.librehu.easysource.data.SourceStore
 import org.librehu.easysource.data.SourceType
+import org.librehu.easysource.data.SwitchSettings
 
 @Composable
 fun SettingsScreen(
@@ -72,12 +75,43 @@ fun SettingsScreen(
     val settings by store.settings.collectAsStateWithLifecycle()
     var adding by remember { mutableStateOf(false) }
     val access = remember { SourceSwitcher.hasSessionAccess(context) }
+    // LibreHU Launcher's car styles: the screen in the style's frame, the switcher and Add as its keys.
+    if (carStyled) {
+        StyledFrame(
+            stringResource(R.string.app_name),
+            listOf(
+                StyledAction(stringResource(R.string.try_switcher), Icons.Default.SwapHoriz, openSwitcher),
+                StyledAction(stringResource(R.string.add_source), Icons.Default.Add) { adding = true },
+            ),
+        ) { SettingsList(store, sources, settings, access, styled = true, openSwitcher, openNotificationAccess) { adding = true } }
+    } else {
+        SettingsList(store, sources, settings, access, styled = false, openSwitcher, openNotificationAccess) { adding = true }
+    }
+    if (adding) {
+        AddSourceDialog(store, onDismiss = { adding = false }) { s ->
+            store.add(s)
+            adding = false
+        }
+    }
+}
+
+@Composable
+private fun SettingsList(
+    store: SourceStore,
+    sources: List<Source>,
+    settings: SwitchSettings,
+    access: Boolean,
+    styled: Boolean,
+    openSwitcher: () -> Unit,
+    openNotificationAccess: () -> Unit,
+    onAdd: () -> Unit,
+) {
     LazyColumn(
         modifier = Modifier.fillMaxSize().background(CarColors.Background),
         contentPadding = PaddingValues(20.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        item {
+        if (!styled) item {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
                     stringResource(R.string.app_name),
@@ -107,7 +141,7 @@ fun SettingsScreen(
         }
         item {
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                Pill(stringResource(R.string.add_source), icon = Icons.Default.Add) { adding = true }
+                Pill(stringResource(R.string.add_source), icon = Icons.Default.Add, onClick = onAdd)
                 if (sources.none { it.type == SourceType.AUX }) {
                     Pill(stringResource(R.string.add_aux), icon = Icons.AutoMirrored.Filled.Input) {
                         store.add(Source(SourceType.AUX, label = "AUX"))
@@ -149,12 +183,6 @@ fun SettingsScreen(
             }
         }
     }
-    if (adding) {
-        AddSourceDialog(store, onDismiss = { adding = false }) { s ->
-            store.add(s)
-            adding = false
-        }
-    }
 }
 
 @Composable
@@ -170,8 +198,9 @@ private fun SourceRow(
     Row(
         Modifier
             .fillMaxWidth()
-            .clip(RoundedCornerShape(20.dp))
-            .background(CarColors.Surface)
+            .clip(if (carStyled) androidx.compose.ui.graphics.RectangleShape else RoundedCornerShape(20.dp))
+            .background(if (carStyled) Color.Black.copy(alpha = 0.6f) else CarColors.Surface)
+            .then(if (RetroLook.ambient) Modifier.border(1.dp, CarColors.Accent) else Modifier)
             .padding(horizontal = 16.dp, vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
@@ -290,6 +319,7 @@ private fun SwitchRow(
     checked: Boolean,
     onChange: (Boolean) -> Unit,
 ) {
+    if (carStyled) return StyledSwitchRow(title, subtitle, checked, onChange = onChange)
     Row(
         Modifier.fillMaxWidth().heightIn(min = 56.dp).clickable { onChange(!checked) },
         verticalAlignment = Alignment.CenterVertically,
@@ -311,6 +341,7 @@ private fun Card(
     title: String,
     content: @Composable ColumnScope.() -> Unit,
 ) {
+    if (carStyled) return StyledCard(title, content = content)
     Column(
         Modifier
             .fillMaxWidth()
@@ -331,6 +362,7 @@ private fun Pill(
     icon: ImageVector? = null,
     onClick: () -> Unit,
 ) {
+    if (carStyled) return StyledPill(label, selected, icon, onClick = onClick)
     Row(
         Modifier
             .heightIn(min = 48.dp)
