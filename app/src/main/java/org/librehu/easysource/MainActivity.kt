@@ -14,6 +14,12 @@ import org.librehu.easysource.ui.ThemeFollower
 
 /** Sources (order, on / off, add), switch settings and how to put EasySource on a steering wheel key. */
 class MainActivity : ComponentActivity() {
+    /** A click on each tap, the sound of LibreHU Launcher's style (see KeyClick). */
+    override fun dispatchTouchEvent(ev: android.view.MotionEvent): Boolean {
+        org.librehu.easysource.ui.KeyClick.onTouch(this, ev, org.librehu.easysource.ui.RetroLook.style)
+        return super.dispatchTouchEvent(ev)
+    }
+
     private val theme =
         lazy {
             ThemeFollower(this) { dark, accent ->

@@ -25,6 +25,12 @@ import org.librehu.easysource.ui.ThemeFollower
  * or at once with OK / play. Touch works too.
  */
 class SwitcherActivity : ComponentActivity() {
+    /** A click on each tap, the sound of LibreHU Launcher's style (see KeyClick). */
+    override fun dispatchTouchEvent(ev: android.view.MotionEvent): Boolean {
+        org.librehu.easysource.ui.KeyClick.onTouch(this, ev, org.librehu.easysource.ui.RetroLook.style)
+        return super.dispatchTouchEvent(ev)
+    }
+
     private val sources = mutableStateOf<List<Source>>(emptyList())
     private val selected = mutableIntStateOf(0)
 
