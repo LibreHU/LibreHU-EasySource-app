@@ -29,7 +29,6 @@ import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.SwapHoriz
-import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderDefaults
@@ -239,7 +238,7 @@ private fun AddSourceDialog(
             .map { it.key }
             .toSet()
     val apps = remember(all) { (if (all) store.launchableApps() else store.mediaApps()).filter { it.key !in existing } }
-    AlertDialog(
+    CarAlertDialog(
         onDismissRequest = onDismiss,
         title = { Text(stringResource(R.string.add_source)) },
         text = {
