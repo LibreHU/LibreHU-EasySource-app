@@ -25,6 +25,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Input
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.MusicNote
@@ -105,6 +106,7 @@ private fun SettingsList(
     openNotificationAccess: () -> Unit,
     onAdd: () -> Unit,
 ) {
+    var info by remember { mutableStateOf(false) }
     LazyColumn(
         modifier = Modifier.fillMaxSize().background(CarColors.Background),
         contentPadding = PaddingValues(20.dp),
@@ -181,7 +183,9 @@ private fun SettingsList(
                 )
             }
         }
+        item { Pill(stringResource(R.string.info_title), icon = Icons.Default.Info) { info = true } }
     }
+    if (info) InfoDialog { info = false }
 }
 
 @Composable
