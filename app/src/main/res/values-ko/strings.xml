@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Korean translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">소스 전환</string>
+    <string name="sources">소스</string>
+    <string name="sources_hint">MODE / SRC 키가 순환하는 순서입니다. 꺼짐: 건너뜀.</string>
+    <string name="add_source">소스 추가</string>
+    <string name="add_aux">AUX 입력</string>
+    <string name="aux_hint">AUX / AV 입력(LibreHU service)</string>
+    <string name="media_apps">미디어 앱만</string>
+    <string name="all_apps">모든 앱</string>
+    <string name="no_apps">다른 앱을 찾지 못했습니다</string>
+    <string name="switching">전환</string>
+    <string name="confirm_delay">키 입력 없이 %1$d초 후 활성화</string>
+    <string name="open_app">소스의 앱 열기</string>
+    <string name="open_app_hint">열지 않으면 가능할 때 백그라운드에서 재생합니다(알림 접근).</string>
+    <string name="resume_boot">부팅 시 마지막 소스 시작</string>
+    <string name="access_missing">알림 접근을 허용하면 EasySource가 다른 소스를 일시정지하고 앱을 열지 않고도 소스를 시작할 수 있습니다.</string>
+    <string name="access_open">접근 허용</string>
+    <string name="wheel">스티어링 휠</string>
+    <string name="wheel_hint">스티어링 휠 버튼 앱에서 MODE / SRC 키를 \"앱 열기\" → EasySource(소스 선택기)로 설정하세요. 누를 때마다 다음 소스가 표시되고, 위의 지연 시간 후 또는 OK / 재생을 누르면 바로 시작됩니다. ▶▶ / ◀◀로도 목록을 이동합니다. 다른 앱도 선택기를 열 수 있습니다:</string>
+    <string name="switcher_title">소스</string>
+    <string name="switcher_hint">MODE / ▶▶ : 다음 · ◀◀ : 이전 · %1$d초 후 시작</string>
+    <string name="info_title">정보</string>
+    <string name="info_version">버전 %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU 기여자.</string>
+    <string name="info_licence">자유 소프트웨어: GNU Affero General Public License 버전 3 또는 (선택에 따라) 그 이후 버전에 따라 공유하고 수정할 수 있으며, 7조의 추가 조건이 적용됩니다: “Based on LibreHU” 표시를 유지하고 수정한 버전은 수정되었음을 표시해야 합니다. 수정한 버전을 배포하거나 원격으로 사용하게 하는 사람은 전체 소스 코드를 같은 라이선스로 제공해야 합니다. 법이 허용하는 범위에서 보증하지 않습니다(15조 및 16조).</string>
+    <string name="info_source">소스 코드: %1$s</string>
+    <string name="info_contact">연락처: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">추가 조건</string>
+    <string name="info_others">다른 프로젝트의 코드, 리소스 및 데이터</string>
+    <string name="info_others_hint">항목을 누르면 라이선스를 볼 수 있습니다.</string>
+    <string name="info_close">닫기</string>
+</resources>

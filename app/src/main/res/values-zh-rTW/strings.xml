@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chinese (Traditional) translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">切換音源</string>
+    <string name="sources">音源</string>
+    <string name="sources_hint">依 MODE / SRC 鍵循環的順序排列。關閉：略過。</string>
+    <string name="add_source">新增音源</string>
+    <string name="add_aux">AUX 輸入</string>
+    <string name="aux_hint">AUX / AV 輸入（LibreHU service）</string>
+    <string name="media_apps">僅媒體應用程式</string>
+    <string name="all_apps">所有應用程式</string>
+    <string name="no_apps">找不到其他應用程式</string>
+    <string name="switching">切換</string>
+    <string name="confirm_delay">無按鍵 %1$d 秒後啟用</string>
+    <string name="open_app">開啟音源的應用程式</string>
+    <string name="open_app_hint">否則在可行時於背景播放（通知存取權）。</string>
+    <string name="resume_boot">開機時啟動上次的音源</string>
+    <string name="access_missing">授予通知存取權後，EasySource 可以暫停其他音源，並在不開啟應用程式的情況下啟動音源。</string>
+    <string name="access_open">授予存取權</string>
+    <string name="wheel">方向盤</string>
+    <string name="wheel_hint">在「方向盤按鍵」中，將 MODE / SRC 鍵設為「開啟應用程式」→ EasySource（音源選擇器）。每按一次顯示下一個音源；在上方的延遲後啟動，或按 OK / 播放立即啟動。▶▶ / ◀◀ 也可在清單中移動。其他應用程式也可以開啟選擇器：</string>
+    <string name="switcher_title">音源</string>
+    <string name="switcher_hint">MODE / ▶▶ ：下一個 · ◀◀ ：上一個 · %1$d 秒後啟動</string>
+    <string name="info_title">關於</string>
+    <string name="info_version">版本 %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU 貢獻者。</string>
+    <string name="info_licence">自由軟體：您可以依據 GNU Affero 通用公共授權第 3 版或（由您選擇）任何更新版本分享和修改它，並遵守其第 7 條的附加條款：保留「Based on LibreHU」聲明，並將修改版標示為修改版。散布修改版或讓他人遠端使用修改版的人，必須以相同授權提供其完整原始碼。在法律允許的範圍內不提供任何擔保（第 15 和 16 條）。</string>
+    <string name="info_source">原始碼：%1$s</string>
+    <string name="info_contact">聯絡方式：librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">附加條款</string>
+    <string name="info_others">其他專案的程式碼、資源和資料</string>
+    <string name="info_others_hint">點按一項查看其授權。</string>
+    <string name="info_close">關閉</string>
+</resources>

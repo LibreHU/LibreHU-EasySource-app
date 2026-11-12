@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Portuguese (Portugal) translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Mudar de fonte</string>
+    <string name="sources">Fontes</string>
+    <string name="sources_hint">Pela ordem em que a tecla MODE / SRC as percorre. Desativada: ignorada.</string>
+    <string name="add_source">Adicionar uma fonte</string>
+    <string name="add_aux">Entrada AUX</string>
+    <string name="aux_hint">Entrada AUX / AV (LibreHU service)</string>
+    <string name="media_apps">Só apps multimédia</string>
+    <string name="all_apps">Todas as apps</string>
+    <string name="no_apps">Nenhuma outra app encontrada</string>
+    <string name="switching">Mudança</string>
+    <string name="confirm_delay">Ativar após %1$d s sem tecla</string>
+    <string name="open_app">Abrir a app da fonte</string>
+    <string name="open_app_hint">Caso contrário, toca em segundo plano quando pode (acesso às notificações).</string>
+    <string name="resume_boot">Iniciar a última fonte no arranque</string>
+    <string name="access_missing">O acesso às notificações permite ao EasySource pausar as outras fontes e iniciar uma sem a abrir.</string>
+    <string name="access_open">Conceder acesso</string>
+    <string name="wheel">Volante</string>
+    <string name="wheel_hint">Em Comandos no volante, defina a tecla MODE / SRC como «Abrir uma app» → EasySource (seletor de fonte). Cada toque mostra a fonte seguinte; começa após o atraso acima, ou de imediato com OK / reproduzir. ▶▶ / ◀◀ também percorrem a lista. Outras apps podem abrir o seletor:</string>
+    <string name="switcher_title">Fonte</string>
+    <string name="switcher_hint">MODE / ▶▶ : seguinte · ◀◀ : anterior · começa em %1$d s</string>
+    <string name="info_title">Informações</string>
+    <string name="info_version">Versão %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 contribuidores do LibreHU.</string>
+    <string name="info_licence">Software livre: pode partilhá-lo e modificá-lo nos termos da GNU Affero General Public License, versão 3 ou (à sua escolha) qualquer versão posterior, com os termos adicionais da sua secção 7: manter a menção “Based on LibreHU” e assinalar uma versão modificada como tal. Quem distribuir uma versão modificada, ou a deixar usar à distância, tem de fornecer o código-fonte completo sob a mesma licença. Sem garantia, na medida permitida por lei (secções 15 e 16).</string>
+    <string name="info_source">Código-fonte: %1$s</string>
+    <string name="info_contact">Contacto: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Termos adicionais</string>
+    <string name="info_others">Código, recursos e dados de outros projetos</string>
+    <string name="info_others_hint">Toque num para ler a licença.</string>
+    <string name="info_close">Fechar</string>
+</resources>

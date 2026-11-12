@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chinese (Simplified) translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">切换音源</string>
+    <string name="sources">音源</string>
+    <string name="sources_hint">按 MODE / SRC 键循环的顺序排列。关闭：跳过。</string>
+    <string name="add_source">添加音源</string>
+    <string name="add_aux">AUX 输入</string>
+    <string name="aux_hint">AUX / AV 输入（LibreHU service）</string>
+    <string name="media_apps">仅媒体应用</string>
+    <string name="all_apps">所有应用</string>
+    <string name="no_apps">未找到其他应用</string>
+    <string name="switching">切换</string>
+    <string name="confirm_delay">无按键 %1$d 秒后启用</string>
+    <string name="open_app">打开音源的应用</string>
+    <string name="open_app_hint">否则在可以时于后台播放（通知使用权）。</string>
+    <string name="resume_boot">开机时启动上次的音源</string>
+    <string name="access_missing">授予通知使用权后，EasySource 可以暂停其他音源，并在不打开应用的情况下启动音源。</string>
+    <string name="access_open">授予权限</string>
+    <string name="wheel">方向盘</string>
+    <string name="wheel_hint">在“方向盘按键”中，将 MODE / SRC 键设为“打开应用”→ EasySource（音源选择器）。每按一次显示下一个音源；在上面的延迟后启动，或按 OK / 播放立即启动。▶▶ / ◀◀ 也可在列表中移动。其他应用也可以打开选择器：</string>
+    <string name="switcher_title">音源</string>
+    <string name="switcher_hint">MODE / ▶▶ ：下一个 · ◀◀ ：上一个 · %1$d 秒后启动</string>
+    <string name="info_title">关于</string>
+    <string name="info_version">版本 %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU 贡献者。</string>
+    <string name="info_licence">自由软件：您可以依据 GNU Affero 通用公共许可证第 3 版或（由您选择）任何更新版本分享和修改它，并遵守其第 7 条的附加条款：保留“Based on LibreHU”声明，并将修改版标明为修改版。分发修改版或允许他人远程使用修改版的人，必须以相同许可证提供其完整源代码。在法律允许的范围内不提供任何担保（第 15 和 16 条）。</string>
+    <string name="info_source">源代码：%1$s</string>
+    <string name="info_contact">联系方式：librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">附加条款</string>
+    <string name="info_others">其他项目的代码、资源和数据</string>
+    <string name="info_others_hint">点按一项查看其许可证。</string>
+    <string name="info_close">关闭</string>
+</resources>

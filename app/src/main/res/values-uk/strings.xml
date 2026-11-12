@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ukrainian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Змінити джерело</string>
+    <string name="sources">Джерела</string>
+    <string name="sources_hint">У порядку, в якому їх перебирає кнопка MODE / SRC. Вимкнене — пропускається.</string>
+    <string name="add_source">Додати джерело</string>
+    <string name="add_aux">Вхід AUX</string>
+    <string name="aux_hint">Вхід AUX / AV (LibreHU service)</string>
+    <string name="media_apps">Лише медіазастосунки</string>
+    <string name="all_apps">Усі застосунки</string>
+    <string name="no_apps">Інших застосунків не знайдено</string>
+    <string name="switching">Перемикання</string>
+    <string name="confirm_delay">Вмикати через %1$d с без натискань</string>
+    <string name="open_app">Відкривати застосунок джерела</string>
+    <string name="open_app_hint">Інакше грає у фоні, коли може (доступ до сповіщень).</string>
+    <string name="resume_boot">Запускати останнє джерело під час увімкнення</string>
+    <string name="access_missing">Доступ до сповіщень дає EasySource змогу ставити інші джерела на паузу й запускати джерело, не відкриваючи його.</string>
+    <string name="access_open">Надати доступ</string>
+    <string name="wheel">Кермо</string>
+    <string name="wheel_hint">У застосунку «Кнопки на кермі» призначте кнопці MODE / SRC дію «Відкрити застосунок» → EasySource (вибір джерела). Кожне натискання показує наступне джерело; воно запускається після затримки вище або одразу кнопкою OK / відтворення. ▶▶ / ◀◀ теж гортають список. Інші застосунки можуть відкрити вибір:</string>
+    <string name="switcher_title">Джерело</string>
+    <string name="switcher_hint">MODE / ▶▶ : наступне · ◀◀ : попереднє · запуск через %1$d с</string>
+    <string name="info_title">Про застосунок</string>
+    <string name="info_version">Версія %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 учасники проєкту LibreHU.</string>
+    <string name="info_licence">Вільне ПЗ: його можна поширювати та змінювати на умовах GNU Affero General Public License версії 3 або (на ваш вибір) будь-якої пізнішої, з додатковими умовами її розділу 7: зберігати позначку “Based on LibreHU” і позначати змінену версію як змінену. Хто поширює змінену версію або дає користуватися нею віддалено, мусить надати її повний вихідний код на тих самих умовах. Без гарантій у межах, дозволених законом (розділи 15 і 16).</string>
+    <string name="info_source">Вихідний код: %1$s</string>
+    <string name="info_contact">Контакт: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Додаткові умови</string>
+    <string name="info_others">Код, ресурси й дані інших проєктів</string>
+    <string name="info_others_hint">Торкніться, щоб прочитати ліцензію.</string>
+    <string name="info_close">Закрити</string>
+</resources>

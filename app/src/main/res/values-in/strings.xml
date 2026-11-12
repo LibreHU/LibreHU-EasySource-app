@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indonesian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Ganti sumber</string>
+    <string name="sources">Sumber</string>
+    <string name="sources_hint">Sesuai urutan yang dilalui tombol MODE / SRC. Nonaktif: dilewati.</string>
+    <string name="add_source">Tambah sumber</string>
+    <string name="add_aux">Input AUX</string>
+    <string name="aux_hint">Input AUX / AV (LibreHU service)</string>
+    <string name="media_apps">Hanya aplikasi media</string>
+    <string name="all_apps">Semua aplikasi</string>
+    <string name="no_apps">Tidak ada aplikasi lain</string>
+    <string name="switching">Peralihan</string>
+    <string name="confirm_delay">Aktifkan setelah %1$d dtk tanpa tombol</string>
+    <string name="open_app">Buka aplikasi sumber</string>
+    <string name="open_app_hint">Jika tidak, diputar di latar belakang bila bisa (akses notifikasi).</string>
+    <string name="resume_boot">Mulai sumber terakhir saat menyala</string>
+    <string name="access_missing">Akses notifikasi memungkinkan EasySource menjeda sumber lain dan memulai satu sumber tanpa membukanya.</string>
+    <string name="access_open">Beri akses</string>
+    <string name="wheel">Setir</string>
+    <string name="wheel_hint">Di Tombol setir, setel tombol MODE / SRC ke \"Buka aplikasi\" → EasySource (pemilih sumber). Setiap tekanan menampilkan sumber berikutnya; sumber dimulai setelah jeda di atas, atau langsung dengan OK / putar. ▶▶ / ◀◀ juga menelusuri daftar. Aplikasi lain dapat membuka pemilih:</string>
+    <string name="switcher_title">Sumber</string>
+    <string name="switcher_hint">MODE / ▶▶ : berikutnya · ◀◀ : sebelumnya · mulai dalam %1$d dtk</string>
+    <string name="info_title">Info</string>
+    <string name="info_version">Versi %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 kontributor LibreHU.</string>
+    <string name="info_licence">Perangkat lunak bebas: Anda dapat membagikan dan mengubahnya menurut GNU Affero General Public License versi 3 atau (sesuai pilihan Anda) versi yang lebih baru, dengan ketentuan tambahan pasal 7: pertahankan keterangan “Based on LibreHU” dan tandai versi yang diubah sebagai versi ubahan. Siapa pun yang mendistribusikan versi ubahan, atau membiarkannya digunakan dari jarak jauh, wajib memberikan kode sumber lengkapnya dengan lisensi yang sama. Tanpa jaminan, sejauh diizinkan hukum (pasal 15 dan 16).</string>
+    <string name="info_source">Kode sumber: %1$s</string>
+    <string name="info_contact">Kontak: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Ketentuan tambahan</string>
+    <string name="info_others">Kode, sumber daya, dan data proyek lain</string>
+    <string name="info_others_hint">Ketuk salah satu untuk membaca lisensinya.</string>
+    <string name="info_close">Tutup</string>
+</resources>

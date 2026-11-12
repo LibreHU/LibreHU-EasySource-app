@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Czech translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Přepnout zdroj</string>
+    <string name="sources">Zdroje</string>
+    <string name="sources_hint">V pořadí, v jakém je prochází tlačítko MODE / SRC. Vypnuto: přeskočeno.</string>
+    <string name="add_source">Přidat zdroj</string>
+    <string name="add_aux">Vstup AUX</string>
+    <string name="aux_hint">Vstup AUX / AV (LibreHU service)</string>
+    <string name="media_apps">Jen multimediální aplikace</string>
+    <string name="all_apps">Všechny aplikace</string>
+    <string name="no_apps">Žádná jiná aplikace nenalezena</string>
+    <string name="switching">Přepínání</string>
+    <string name="confirm_delay">Aktivovat po %1$d s bez stisku</string>
+    <string name="open_app">Otevřít aplikaci zdroje</string>
+    <string name="open_app_hint">Jinak hraje na pozadí, když to jde (přístup k oznámením).</string>
+    <string name="resume_boot">Při startu spustit poslední zdroj</string>
+    <string name="access_missing">Přístup k oznámením umožní EasySource pozastavit ostatní zdroje a spustit jeden bez otevření.</string>
+    <string name="access_open">Udělit přístup</string>
+    <string name="wheel">Volant</string>
+    <string name="wheel_hint">V aplikaci Ovládání na volantu nastavte tlačítku MODE / SRC akci „Otevřít aplikaci“ → EasySource (výběr zdroje). Každý stisk ukáže další zdroj; spustí se po prodlevě výše, nebo hned tlačítkem OK / přehrát. Seznamem procházejí i ▶▶ / ◀◀. Výběr mohou otevřít i jiné aplikace:</string>
+    <string name="switcher_title">Zdroj</string>
+    <string name="switcher_hint">MODE / ▶▶ : další · ◀◀ : předchozí · spustí se za %1$d s</string>
+    <string name="info_title">Informace</string>
+    <string name="info_version">Verze %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 přispěvatelé LibreHU.</string>
+    <string name="info_licence">Svobodný software: můžete jej sdílet a upravovat podle licence GNU Affero General Public License, verze 3 nebo (dle vaší volby) jakékoli pozdější, s dodatečnými podmínkami jejího oddílu 7: zachovat označení „Based on LibreHU“ a upravenou verzi jako takovou označit. Kdo šíří upravenou verzi nebo ji nechá používat na dálku, musí poskytnout její úplný zdrojový kód pod stejnou licencí. Bez záruky v rozsahu povoleném zákonem (oddíly 15 a 16).</string>
+    <string name="info_source">Zdrojový kód: %1$s</string>
+    <string name="info_contact">Kontakt: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Dodatečné podmínky</string>
+    <string name="info_others">Kód, zdroje a data jiných projektů</string>
+    <string name="info_others_hint">Klepnutím zobrazíte licenci.</string>
+    <string name="info_close">Zavřít</string>
+</resources>

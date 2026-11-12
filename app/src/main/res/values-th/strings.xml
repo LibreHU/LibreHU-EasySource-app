@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thai translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">สลับแหล่งเสียง</string>
+    <string name="sources">แหล่งเสียง</string>
+    <string name="sources_hint">เรียงตามลำดับที่ปุ่ม MODE / SRC วนผ่าน ปิด: ข้ามไป</string>
+    <string name="add_source">เพิ่มแหล่งเสียง</string>
+    <string name="add_aux">อินพุต AUX</string>
+    <string name="aux_hint">อินพุต AUX / AV (LibreHU service)</string>
+    <string name="media_apps">เฉพาะแอปมีเดีย</string>
+    <string name="all_apps">แอปทั้งหมด</string>
+    <string name="no_apps">ไม่พบแอปอื่น</string>
+    <string name="switching">การสลับ</string>
+    <string name="confirm_delay">เปิดใช้หลังไม่กดปุ่ม %1$d วินาที</string>
+    <string name="open_app">เปิดแอปของแหล่งเสียง</string>
+    <string name="open_app_hint">มิฉะนั้นจะเล่นในพื้นหลังเมื่อทำได้ (สิทธิ์เข้าถึงการแจ้งเตือน)</string>
+    <string name="resume_boot">เริ่มแหล่งเสียงล่าสุดเมื่อเปิดเครื่อง</string>
+    <string name="access_missing">สิทธิ์เข้าถึงการแจ้งเตือนช่วยให้ EasySource หยุดแหล่งเสียงอื่นชั่วคราว และเริ่มแหล่งเสียงได้โดยไม่ต้องเปิดแอป</string>
+    <string name="access_open">ให้สิทธิ์</string>
+    <string name="wheel">พวงมาลัย</string>
+    <string name="wheel_hint">ในแอปปุ่มบนพวงมาลัย ตั้งปุ่ม MODE / SRC เป็น \"เปิดแอป\" → EasySource (ตัวเลือกแหล่งเสียง) กดแต่ละครั้งจะแสดงแหล่งเสียงถัดไป ซึ่งจะเริ่มหลังหน่วงเวลาด้านบน หรือทันทีเมื่อกด OK / เล่น ▶▶ / ◀◀ ก็เลื่อนในรายการได้ แอปอื่นสามารถเปิดตัวเลือกได้:</string>
+    <string name="switcher_title">แหล่งเสียง</string>
+    <string name="switcher_hint">MODE / ▶▶ : ถัดไป · ◀◀ : ก่อนหน้า · เริ่มใน %1$d วินาที</string>
+    <string name="info_title">ข้อมูล</string>
+    <string name="info_version">เวอร์ชัน %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 ผู้ร่วมพัฒนา LibreHU</string>
+    <string name="info_licence">ซอฟต์แวร์เสรี: คุณแบ่งปันและแก้ไขได้ภายใต้ GNU Affero General Public License รุ่น 3 หรือ (ตามที่คุณเลือก) รุ่นใดก็ได้ที่ใหม่กว่า พร้อมข้อกำหนดเพิ่มเติมตามมาตรา 7: คงข้อความ “Based on LibreHU” ไว้ และระบุว่ารุ่นที่แก้ไขเป็นรุ่นที่แก้ไขแล้ว ผู้ที่เผยแพร่รุ่นที่แก้ไข หรือให้ผู้อื่นใช้งานจากระยะไกล ต้องให้ซอร์สโค้ดฉบับสมบูรณ์ภายใต้สัญญาอนุญาตเดียวกัน ไม่มีการรับประกันเท่าที่กฎหมายอนุญาต (มาตรา 15 และ 16)</string>
+    <string name="info_source">ซอร์สโค้ด: %1$s</string>
+    <string name="info_contact">ติดต่อ: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">ข้อกำหนดเพิ่มเติม</string>
+    <string name="info_others">โค้ด ทรัพยากร และข้อมูลจากโครงการอื่น</string>
+    <string name="info_others_hint">แตะรายการเพื่ออ่านสัญญาอนุญาต</string>
+    <string name="info_close">ปิด</string>
+</resources>

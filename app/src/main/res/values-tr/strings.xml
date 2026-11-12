@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Turkish translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Kaynak değiştir</string>
+    <string name="sources">Kaynaklar</string>
+    <string name="sources_hint">MODE / SRC tuşunun onları dolaştığı sırayla. Kapalı: atlanır.</string>
+    <string name="add_source">Kaynak ekle</string>
+    <string name="add_aux">AUX girişi</string>
+    <string name="aux_hint">AUX / AV girişi (LibreHU service)</string>
+    <string name="media_apps">Yalnızca medya uygulamaları</string>
+    <string name="all_apps">Tüm uygulamalar</string>
+    <string name="no_apps">Başka uygulama bulunamadı</string>
+    <string name="switching">Geçiş</string>
+    <string name="confirm_delay">Tuşa basılmazsa %1$d sn sonra etkinleştir</string>
+    <string name="open_app">Kaynağın uygulamasını aç</string>
+    <string name="open_app_hint">Aksi halde mümkün olduğunda arka planda çalar (bildirim erişimi).</string>
+    <string name="resume_boot">Açılışta son kaynağı başlat</string>
+    <string name="access_missing">Bildirim erişimi, EasySource\'un diğer kaynakları duraklatmasını ve bir kaynağı açmadan başlatmasını sağlar.</string>
+    <string name="access_open">Erişim ver</string>
+    <string name="wheel">Direksiyon</string>
+    <string name="wheel_hint">Direksiyon kumandaları uygulamasında MODE / SRC tuşunu \"Bir uygulama aç\" → EasySource (kaynak seçici) olarak ayarlayın. Her basış sonraki kaynağı gösterir; yukarıdaki gecikmeden sonra ya da OK / oynat ile hemen başlar. ▶▶ / ◀◀ de listede gezinir. Diğer uygulamalar seçiciyi açabilir:</string>
+    <string name="switcher_title">Kaynak</string>
+    <string name="switcher_hint">MODE / ▶▶ : sonraki · ◀◀ : önceki · %1$d sn içinde başlar</string>
+    <string name="info_title">Bilgi</string>
+    <string name="info_version">Sürüm %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU katkıda bulunanları.</string>
+    <string name="info_licence">Özgür yazılım: GNU Affero General Public License sürüm 3 veya (tercihinize göre) daha sonraki bir sürüm kapsamında, 7. bölümdeki ek koşullarla paylaşabilir ve değiştirebilirsiniz: “Based on LibreHU” ibaresini koruyun ve değiştirilmiş sürümü öyle belirtin. Değiştirilmiş bir sürümü dağıtan ya da uzaktan kullandıran, tam kaynak kodunu aynı lisansla vermelidir. Yasanın izin verdiği ölçüde garanti yoktur (bölüm 15 ve 16).</string>
+    <string name="info_source">Kaynak kodu: %1$s</string>
+    <string name="info_contact">İletişim: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Ek koşullar</string>
+    <string name="info_others">Diğer projelerin kodu, kaynakları ve verileri</string>
+    <string name="info_others_hint">Lisansını okumak için birine dokunun.</string>
+    <string name="info_close">Kapat</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hindi translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">स्रोत बदलें</string>
+    <string name="sources">स्रोत</string>
+    <string name="sources_hint">उसी क्रम में जिसमें MODE / SRC बटन उनसे गुज़रता है। बंद: छोड़ दिया जाता है।</string>
+    <string name="add_source">स्रोत जोड़ें</string>
+    <string name="add_aux">AUX इनपुट</string>
+    <string name="aux_hint">AUX / AV इनपुट (LibreHU service)</string>
+    <string name="media_apps">केवल मीडिया ऐप</string>
+    <string name="all_apps">सभी ऐप</string>
+    <string name="no_apps">कोई दूसरा ऐप नहीं मिला</string>
+    <string name="switching">बदलाव</string>
+    <string name="confirm_delay">बिना बटन दबाए %1$d सेकंड बाद चालू करें</string>
+    <string name="open_app">स्रोत का ऐप खोलें</string>
+    <string name="open_app_hint">वरना जब संभव हो, बैकग्राउंड में चलता है (सूचना ऐक्सेस)।</string>
+    <string name="resume_boot">चालू होने पर पिछला स्रोत शुरू करें</string>
+    <string name="access_missing">सूचना ऐक्सेस से EasySource दूसरे स्रोतों को रोक सकता है और किसी स्रोत को खोले बिना शुरू कर सकता है।</string>
+    <string name="access_open">ऐक्सेस दें</string>
+    <string name="wheel">स्टीयरिंग व्हील</string>
+    <string name="wheel_hint">स्टीयरिंग बटन ऐप में MODE / SRC बटन को \"कोई ऐप खोलें\" → EasySource (स्रोत चुनने वाला) पर सेट करें। हर बार दबाने पर अगला स्रोत दिखता है; वह ऊपर दी गई देरी के बाद या OK / प्ले दबाने पर तुरंत शुरू होता है। ▶▶ / ◀◀ से भी सूची में आगे-पीछे जाया जा सकता है। दूसरे ऐप भी चयनकर्ता खोल सकते हैं:</string>
+    <string name="switcher_title">स्रोत</string>
+    <string name="switcher_hint">MODE / ▶▶ : अगला · ◀◀ : पिछला · %1$d सेकंड में शुरू</string>
+    <string name="info_title">जानकारी</string>
+    <string name="info_version">संस्करण %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU के योगदानकर्ता।</string>
+    <string name="info_licence">फ़्री सॉफ़्टवेयर: आप इसे GNU Affero General Public License संस्करण 3 या (अपनी पसंद से) किसी बाद के संस्करण के तहत साझा और संशोधित कर सकते हैं, इसकी धारा 7 की अतिरिक्त शर्तों के साथ: “Based on LibreHU” सूचना बनाए रखें और संशोधित संस्करण को संशोधित के रूप में चिह्नित करें। जो संशोधित संस्करण वितरित करता है या उसे दूर से उपयोग करने देता है, उसे उसी लाइसेंस के तहत पूरा सोर्स कोड देना होगा। कानून द्वारा अनुमत सीमा तक कोई वारंटी नहीं (धारा 15 और 16)।</string>
+    <string name="info_source">सोर्स कोड: %1$s</string>
+    <string name="info_contact">संपर्क: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">अतिरिक्त शर्तें</string>
+    <string name="info_others">दूसरी परियोजनाओं का कोड, संसाधन और डेटा</string>
+    <string name="info_others_hint">लाइसेंस पढ़ने के लिए किसी एक पर टैप करें।</string>
+    <string name="info_close">बंद करें</string>
+</resources>

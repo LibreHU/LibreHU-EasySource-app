@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Georgian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">წყაროს შეცვლა</string>
+    <string name="sources">წყაროები</string>
+    <string name="sources_hint">იმ რიგით, რომლითაც MODE / SRC ღილაკი მათ გადის. გამორთული: გამოიტოვება.</string>
+    <string name="add_source">წყაროს დამატება</string>
+    <string name="add_aux">AUX შესასვლელი</string>
+    <string name="aux_hint">AUX / AV შესასვლელი (LibreHU service)</string>
+    <string name="media_apps">მხოლოდ მედიააპები</string>
+    <string name="all_apps">ყველა აპი</string>
+    <string name="no_apps">სხვა აპი ვერ მოიძებნა</string>
+    <string name="switching">გადართვა</string>
+    <string name="confirm_delay">ჩართვა %1$d წმ-ის შემდეგ, თუ ღილაკს არ დააჭერთ</string>
+    <string name="open_app">წყაროს აპის გახსნა</string>
+    <string name="open_app_hint">თუ არა, უკრავს ფონურ რეჟიმში, როცა შეუძლია (შეტყობინებებზე წვდომა).</string>
+    <string name="resume_boot">ჩართვისას ბოლო წყაროს გაშვება</string>
+    <string name="access_missing">შეტყობინებებზე წვდომა EasySource-ს საშუალებას აძლევს, სხვა წყაროები დააპაუზოს და წყარო გაუხსნელად გაუშვას.</string>
+    <string name="access_open">წვდომის მიცემა</string>
+    <string name="wheel">საჭე</string>
+    <string name="wheel_hint">საჭის ღილაკების აპში MODE / SRC ღილაკს მიანიჭეთ „აპის გახსნა“ → EasySource (წყაროს ამრჩევი). ყოველი დაჭერა შემდეგ წყაროს აჩვენებს; ის ზემოთ მითითებული დაყოვნების შემდეგ ან OK / დაკვრით მაშინვე ირთვება. ▶▶ / ◀◀ სიაშიც გადაადგილდება. ამრჩევის გახსნა სხვა აპებსაც შეუძლიათ:</string>
+    <string name="switcher_title">წყარო</string>
+    <string name="switcher_hint">MODE / ▶▶ : შემდეგი · ◀◀ : წინა · ჩაირთვება %1$d წმ-ში</string>
+    <string name="info_title">ინფორმაცია</string>
+    <string name="info_version">ვერსია %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU-ის მონაწილეები.</string>
+    <string name="info_licence">თავისუფალი პროგრამა: შეგიძლიათ გააზიაროთ და შეცვალოთ GNU Affero General Public License-ის მე-3 ან (თქვენი არჩევით) ნებისმიერი უფრო ახალი ვერსიით, მისი მე-7 ნაწილის დამატებითი პირობებით: შეინარჩუნეთ წარწერა “Based on LibreHU” და შეცვლილი ვერსია მონიშნეთ შეცვლილად. ვინც შეცვლილ ვერსიას ავრცელებს ან დისტანციურად გამოყენების საშუალებას იძლევა, ვალდებულია მისი სრული საწყისი კოდი იმავე ლიცენზიით მისცეს. გარანტიის გარეშე, კანონით დაშვებულ ფარგლებში (ნაწილები 15 და 16).</string>
+    <string name="info_source">საწყისი კოდი: %1$s</string>
+    <string name="info_contact">კონტაქტი: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">დამატებითი პირობები</string>
+    <string name="info_others">სხვა პროექტების კოდი, რესურსები და მონაცემები</string>
+    <string name="info_others_hint">შეეხეთ ერთ-ერთს მისი ლიცენზიის წასაკითხად.</string>
+    <string name="info_close">დახურვა</string>
+</resources>

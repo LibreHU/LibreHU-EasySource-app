@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vietnamese translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">EasySource</string>
+    <string name="try_switcher">Đổi nguồn</string>
+    <string name="sources">Nguồn</string>
+    <string name="sources_hint">Theo thứ tự phím MODE / SRC lần lượt chuyển qua. Tắt: bỏ qua.</string>
+    <string name="add_source">Thêm nguồn</string>
+    <string name="add_aux">Ngõ vào AUX</string>
+    <string name="aux_hint">Ngõ vào AUX / AV (LibreHU service)</string>
+    <string name="media_apps">Chỉ ứng dụng đa phương tiện</string>
+    <string name="all_apps">Tất cả ứng dụng</string>
+    <string name="no_apps">Không tìm thấy ứng dụng nào khác</string>
+    <string name="switching">Chuyển đổi</string>
+    <string name="confirm_delay">Kích hoạt sau %1$d giây không bấm phím</string>
+    <string name="open_app">Mở ứng dụng của nguồn</string>
+    <string name="open_app_hint">Nếu không, phát ở chế độ nền khi có thể (quyền truy cập thông báo).</string>
+    <string name="resume_boot">Bật nguồn cuối cùng khi khởi động</string>
+    <string name="access_missing">Quyền truy cập thông báo cho phép EasySource tạm dừng các nguồn khác và bật một nguồn mà không cần mở nó.</string>
+    <string name="access_open">Cấp quyền</string>
+    <string name="wheel">Vô lăng</string>
+    <string name="wheel_hint">Trong Nút trên vô lăng, đặt phím MODE / SRC thành \"Mở một ứng dụng\" → EasySource (bộ chọn nguồn). Mỗi lần bấm hiện nguồn tiếp theo; nguồn bắt đầu sau độ trễ ở trên, hoặc ngay lập tức với OK / phát. ▶▶ / ◀◀ cũng di chuyển trong danh sách. Các ứng dụng khác có thể mở bộ chọn:</string>
+    <string name="switcher_title">Nguồn</string>
+    <string name="switcher_hint">MODE / ▶▶ : tiếp · ◀◀ : trước · bắt đầu sau %1$d giây</string>
+    <string name="info_title">Thông tin</string>
+    <string name="info_version">Phiên bản %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 những người đóng góp cho LibreHU.</string>
+    <string name="info_licence">Phần mềm tự do: bạn có thể chia sẻ và sửa đổi theo GNU Affero General Public License phiên bản 3 hoặc (tùy bạn chọn) bất kỳ phiên bản nào mới hơn, kèm các điều khoản bổ sung tại mục 7: giữ dòng “Based on LibreHU” và ghi rõ phiên bản đã sửa đổi. Ai phân phối phiên bản sửa đổi, hoặc cho người khác dùng từ xa, phải cung cấp toàn bộ mã nguồn theo cùng giấy phép. Không bảo hành, trong phạm vi pháp luật cho phép (mục 15 và 16).</string>
+    <string name="info_source">Mã nguồn: %1$s</string>
+    <string name="info_contact">Liên hệ: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Điều khoản bổ sung</string>
+    <string name="info_others">Mã, tài nguyên và dữ liệu của các dự án khác</string>
+    <string name="info_others_hint">Chạm vào một mục để đọc giấy phép.</string>
+    <string name="info_close">Đóng</string>
+</resources>
